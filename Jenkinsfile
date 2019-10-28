@@ -3,7 +3,7 @@ pipeline {
         label 'Demo'
     }
     parameters {
-        choice choices: ['DEVELOP', 'RELEASE'], description: '', name: 'RELEASE'
+        choice choices: ['DEVELOP', 'TEST', 'RELEASE'], description: '', name: 'RELEASE'
         string defaultValue: '0.0.1', description: '', name: 'RELEASE_VER', trim: false
     }
 
